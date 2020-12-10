@@ -1,0 +1,301 @@
+[0m[[0m[31merror[0m] [0m[0m/flexpret/src/main/scala/Core/RegisterFile.scala:10:8: not found: object chisel3[0m
+[0m[[0m[31merror[0m] [0m[0mimport chisel3._[0m
+[0m[[0m[31merror[0m] [0m[0m       ^[0m
+[0m[[0m[31merror[0m] [0m[0m/flexpret/src/main/scala/Core/RegisterFile.scala:11:8: not found: object chisel3[0m
+[0m[[0m[31merror[0m] [0m[0mimport chisel3.util.{Cat, log2Ceil, MuxLookup}[0m
+[0m[[0m[31merror[0m] [0m[0m       ^[0m
+[0m[[0m[31merror[0m] [0m[0m/flexpret/src/main/scala/Core/RegisterFile.scala:14:8: not found: object chisel3[0m
+[0m[[0m[31merror[0m] [0m[0mimport chisel3.experimental.chiselName[0m
+[0m[[0m[31merror[0m] [0m[0m       ^[0m
+[0m[[0m[31merror[0m] [0m[0m/flexpret/src/main/scala/Core/RegisterFile.scala:16:55: not found: type Bundle[0m
+[0m[[0m[31merror[0m] [0m[0mclass RegisterFileReadIO(val threadBits: Int) extends Bundle {[0m
+[0m[[0m[31merror[0m] [0m[0m                                                      ^[0m
+[0m[[0m[31merror[0m] [0m[0m/flexpret/src/main/scala/Core/RegisterFile.scala:17:16: not found: value Input[0m
+[0m[[0m[31merror[0m] [0m[0m  val thread = Input(UInt(threadBits.W))[0m
+[0m[[0m[31merror[0m] [0m[0m               ^[0m
+[0m[[0m[31merror[0m] [0m[0m/flexpret/src/main/scala/Core/RegisterFile.scala:17:22: not found: value UInt[0m
+[0m[[0m[31merror[0m] [0m[0m  val thread = Input(UInt(threadBits.W))[0m
+[0m[[0m[31merror[0m] [0m[0m                     ^[0m
+[0m[[0m[31merror[0m] [0m[0m/flexpret/src/main/scala/Core/RegisterFile.scala:17:38: value W is not a member of Int[0m
+[0m[[0m[31merror[0m] [0m[0m  val thread = Input(UInt(threadBits.W))[0m
+[0m[[0m[31merror[0m] [0m[0m                                     ^[0m
+[0m[[0m[31merror[0m] [0m[0m/flexpret/src/main/scala/Core/RegisterFile.scala:18:14: not found: value Input[0m
+[0m[[0m[31merror[0m] [0m[0m  val addr = Input(UInt(REG_ADDR_BITS.W))[0m
+[0m[[0m[31merror[0m] [0m[0m             ^[0m
+[0m[[0m[31merror[0m] [0m[0m/flexpret/src/main/scala/Core/RegisterFile.scala:18:20: not found: value UInt[0m
+[0m[[0m[31merror[0m] [0m[0m  val addr = Input(UInt(REG_ADDR_BITS.W))[0m
+[0m[[0m[31merror[0m] [0m[0m                   ^[0m
+[0m[[0m[31merror[0m] [0m[0m/flexpret/src/main/scala/Core/RegisterFile.scala:18:39: value W is not a member of Int[0m
+[0m[[0m[31merror[0m] [0m[0m  val addr = Input(UInt(REG_ADDR_BITS.W))[0m
+[0m[[0m[31merror[0m] [0m[0m                                      ^[0m
+[0m[[0m[31merror[0m] [0m[0m/flexpret/src/main/scala/Core/RegisterFile.scala:19:14: not found: value Output[0m
+[0m[[0m[31merror[0m] [0m[0m  val data = Output(UInt(32.W))[0m
+[0m[[0m[31merror[0m] [0m[0m             ^[0m
+[0m[[0m[31merror[0m] [0m[0m/flexpret/src/main/scala/Core/RegisterFile.scala:19:21: not found: value UInt[0m
+[0m[[0m[31merror[0m] [0m[0m  val data = Output(UInt(32.W))[0m
+[0m[[0m[31merror[0m] [0m[0m                    ^[0m
+[0m[[0m[31merror[0m] [0m[0m/flexpret/src/main/scala/Core/RegisterFile.scala:19:29: value W is not a member of Int[0m
+[0m[[0m[31merror[0m] [0m[0m  val data = Output(UInt(32.W))[0m
+[0m[[0m[31merror[0m] [0m[0m                            ^[0m
+[0m[[0m[31merror[0m] [0m[0m/flexpret/src/main/scala/Core/RegisterFile.scala:22:56: not found: type Bundle[0m
+[0m[[0m[31merror[0m] [0m[0mclass RegisterFileWriteIO(val threadBits: Int) extends Bundle {[0m
+[0m[[0m[31merror[0m] [0m[0m                                                       ^[0m
+[0m[[0m[31merror[0m] [0m[0m/flexpret/src/main/scala/Core/RegisterFile.scala:23:16: not found: value Input[0m
+[0m[[0m[31merror[0m] [0m[0m  val thread = Input(UInt(threadBits.W))[0m
+[0m[[0m[31merror[0m] [0m[0m               ^[0m
+[0m[[0m[31merror[0m] [0m[0m/flexpret/src/main/scala/Core/RegisterFile.scala:23:22: not found: value UInt[0m
+[0m[[0m[31merror[0m] [0m[0m  val thread = Input(UInt(threadBits.W))[0m
+[0m[[0m[31merror[0m] [0m[0m                     ^[0m
+[0m[[0m[31merror[0m] [0m[0m/flexpret/src/main/scala/Core/RegisterFile.scala:23:38: value W is not a member of Int[0m
+[0m[[0m[31merror[0m] [0m[0m  val thread = Input(UInt(threadBits.W))[0m
+[0m[[0m[31merror[0m] [0m[0m                                     ^[0m
+[0m[[0m[31merror[0m] [0m[0m/flexpret/src/main/scala/Core/RegisterFile.scala:24:14: not found: value Input[0m
+[0m[[0m[31merror[0m] [0m[0m  val addr = Input(UInt(REG_ADDR_BITS.W))[0m
+[0m[[0m[31merror[0m] [0m[0m             ^[0m
+[0m[[0m[31merror[0m] [0m[0m/flexpret/src/main/scala/Core/RegisterFile.scala:24:20: not found: value UInt[0m
+[0m[[0m[31merror[0m] [0m[0m  val addr = Input(UInt(REG_ADDR_BITS.W))[0m
+[0m[[0m[31merror[0m] [0m[0m                   ^[0m
+[0m[[0m[31merror[0m] [0m[0m/flexpret/src/main/scala/Core/RegisterFile.scala:24:39: value W is not a member of Int[0m
+[0m[[0m[31merror[0m] [0m[0m  val addr = Input(UInt(REG_ADDR_BITS.W))[0m
+[0m[[0m[31merror[0m] [0m[0m                                      ^[0m
+[0m[[0m[31merror[0m] [0m[0m/flexpret/src/main/scala/Core/RegisterFile.scala:25:14: not found: value Input[0m
+[0m[[0m[31merror[0m] [0m[0m  val data = Input(UInt(32.W))[0m
+[0m[[0m[31merror[0m] [0m[0m             ^[0m
+[0m[[0m[31merror[0m] [0m[0m/flexpret/src/main/scala/Core/RegisterFile.scala:25:20: not found: value UInt[0m
+[0m[[0m[31merror[0m] [0m[0m  val data = Input(UInt(32.W))[0m
+[0m[[0m[31merror[0m] [0m[0m                   ^[0m
+[0m[[0m[31merror[0m] [0m[0m/flexpret/src/main/scala/Core/RegisterFile.scala:25:28: value W is not a member of Int[0m
+[0m[[0m[31merror[0m] [0m[0m  val data = Input(UInt(32.W))[0m
+[0m[[0m[31merror[0m] [0m[0m                           ^[0m
+[0m[[0m[31merror[0m] [0m[0m/flexpret/src/main/scala/Core/RegisterFile.scala:26:16: not found: value Input[0m
+[0m[[0m[31merror[0m] [0m[0m  val enable = Input(Bool())[0m
+[0m[[0m[31merror[0m] [0m[0m               ^[0m
+[0m[[0m[31merror[0m] [0m[0m/flexpret/src/main/scala/Core/RegisterFile.scala:26:22: not found: value Bool[0m
+[0m[[0m[31merror[0m] [0m[0m  val enable = Input(Bool())[0m
+[0m[[0m[31merror[0m] [0m[0m                     ^[0m
+[0m[[0m[31merror[0m] [0m[0m/flexpret/src/main/scala/Core/RegisterFile.scala:34:95: not found: type Module[0m
+[0m[[0m[31merror[0m] [0m[0mclass RegisterFile(val threads: Int, val readPorts: Int = 2, val writePorts: Int = 1) extends Module {[0m
+[0m[[0m[31merror[0m] [0m[0m                                                                                              ^[0m
+[0m[[0m[31merror[0m] [0m[0m/flexpret/src/main/scala/Core/core.scala:10:8: not found: object chisel3[0m
+[0m[[0m[31merror[0m] [0m[0mimport chisel3._[0m
+[0m[[0m[31merror[0m] [0m[0m       ^[0m
+[0m[[0m[31merror[0m] [0m[0m/flexpret/src/main/scala/Core/RegisterFile.scala:33:2: not found: type chiselName[0m
+[0m[[0m[31merror[0m] [0m[0m@chiselName[0m
+[0m[[0m[31merror[0m] [0m[0m ^[0m
+[0m[[0m[31merror[0m] [0m[0m/flexpret/src/main/scala/Core/RegisterFile.scala:36:20: not found: value log2Ceil[0m
+[0m[[0m[31merror[0m] [0m[0m  val threadBits = log2Ceil(threads)[0m
+[0m[[0m[31merror[0m] [0m[0m                   ^[0m
+[0m[[0m[31merror[0m] [0m[0m/flexpret/src/main/scala/Core/RegisterFile.scala:40:12: not found: value IO[0m
+[0m[[0m[31merror[0m] [0m[0m  val io = IO(new Bundle {[0m
+[0m[[0m[31merror[0m] [0m[0m           ^[0m
+[0m[[0m[31merror[0m] [0m[0m/flexpret/src/main/scala/Core/RegisterFile.scala:40:19: not found: type Bundle[0m
+[0m[[0m[31merror[0m] [0m[0m  val io = IO(new Bundle {[0m
+[0m[[0m[31merror[0m] [0m[0m                  ^[0m
+[0m[[0m[31merror[0m] [0m[0m/flexpret/src/main/scala/Core/RegisterFile.scala:41:16: not found: value Vec[0m
+[0m[[0m[31merror[0m] [0m[0m    val read = Vec(readPorts, new RegisterFileReadIO(threadBits))[0m
+[0m[[0m[31merror[0m] [0m[0m               ^[0m
+[0m[[0m[31merror[0m] [0m[0m/flexpret/src/main/scala/Core/RegisterFile.scala:42:17: not found: value Vec[0m
+[0m[[0m[31merror[0m] [0m[0m    val write = Vec(writePorts, new RegisterFileWriteIO(threadBits))[0m
+[0m[[0m[31merror[0m] [0m[0m                ^[0m
+[0m[[0m[31merror[0m] [0m[0m/flexpret/src/main/scala/Core/RegisterFile.scala:45:57: not found: type UInt[0m
+[0m[[0m[31merror[0m] [0m[0m  private def regfileAddress(thread: UInt, addr: UInt): UInt = {[0m
+[0m[[0m[31merror[0m] [0m[0m                                                        ^[0m
+[0m[[0m[31merror[0m] [0m[0m/flexpret/src/main/scala/Core/RegisterFile.scala:45:38: not found: type UInt[0m
+[0m[[0m[31merror[0m] [0m[0m  private def regfileAddress(thread: UInt, addr: UInt): UInt = {[0m
+[0m[[0m[31merror[0m] [0m[0m                                     ^[0m
+[0m[[0m[31merror[0m] [0m[0m/flexpret/src/main/scala/Core/RegisterFile.scala:45:50: not found: type UInt[0m
+[0m[[0m[31merror[0m] [0m[0m  private def regfileAddress(thread: UInt, addr: UInt): UInt = {[0m
+[0m[[0m[31merror[0m] [0m[0m                                                 ^[0m
+[0m[[0m[31merror[0m] [0m[0m/flexpret/src/main/scala/Core/RegisterFile.scala:46:5: not found: value Mux[0m
+[0m[[0m[31merror[0m] [0m[0m    Mux(thread <= (threads - 1).U, Cat(thread, addr), 0.U)[0m
+[0m[[0m[31merror[0m] [0m[0m    ^[0m
+[0m[[0m[31merror[0m] [0m[0m/flexpret/src/main/scala/Core/RegisterFile.scala:46:36: not found: value Cat[0m
+[0m[[0m[31merror[0m] [0m[0m    Mux(thread <= (threads - 1).U, Cat(thread, addr), 0.U)[0m
+[0m[[0m[31merror[0m] [0m[0m                                   ^[0m
+[0m[[0m[31merror[0m] [0m[0m/flexpret/src/main/scala/Core/RegisterFile.scala:46:57: value U is not a member of Int[0m
+[0m[[0m[31merror[0m] [0m[0m    Mux(thread <= (threads - 1).U, Cat(thread, addr), 0.U)[0m
+[0m[[0m[31merror[0m] [0m[0m                                                        ^[0m
+[0m[[0m[31merror[0m] [0m[0m/flexpret/src/main/scala/Core/RegisterFile.scala:53:17: not found: value SyncReadMem[0m
+[0m[[0m[31merror[0m] [0m[0m  val regfile = SyncReadMem(regDepth, UInt(32.W))[0m
+[0m[[0m[31merror[0m] [0m[0m                ^[0m
+[0m[[0m[31merror[0m] [0m[0m/flexpret/src/main/scala/Core/RegisterFile.scala:53:39: not found: value UInt[0m
+[0m[[0m[31merror[0m] [0m[0m  val regfile = SyncReadMem(regDepth, UInt(32.W))[0m
+[0m[[0m[31merror[0m] [0m[0m                                      ^[0m
+[0m[[0m[31merror[0m] [0m[0m/flexpret/src/main/scala/Core/RegisterFile.scala:53:47: value W is not a member of Int[0m
+[0m[[0m[31merror[0m] [0m[0m  val regfile = SyncReadMem(regDepth, UInt(32.W))[0m
+[0m[[0m[31merror[0m] [0m[0m                                              ^[0m
+[0m[[0m[31merror[0m] [0m[0m/flexpret/src/main/scala/Core/constants.scala:10:8: not found: object Chisel[0m
+[0m[[0m[31merror[0m] [0m[0mimport Chisel._[0m
+[0m[[0m[31merror[0m] [0m[0m       ^[0m
+[0m[[0m[31merror[0m] [0m[0m/flexpret/src/main/scala/Core/constants.scala:22:11: not found: value BitPat[0m
+[0m[[0m[31merror[0m] [0m[0m  def Y = BitPat("b1")[0m
+[0m[[0m[31merror[0m] [0m[0m          ^[0m
+[0m[[0m[31merror[0m] [0m[0m/flexpret/src/main/scala/Core/constants.scala:23:11: not found: value BitPat[0m
+[0m[[0m[31merror[0m] [0m[0m  def N = BitPat("b0")[0m
+[0m[[0m[31merror[0m] [0m[0m          ^[0m
+[0m[[0m[31merror[0m] [0m[0m/flexpret/src/main/scala/Core/constants.scala:24:11: not found: value BitPat[0m
+[0m[[0m[31merror[0m] [0m[0m  val X = BitPat("b?")[0m
+[0m[[0m[31merror[0m] [0m[0m          ^[0m
+[0m[[0m[31merror[0m] [0m[0m/flexpret/src/main/scala/Core/constants.scala:28:16: not found: value UInt[0m
+[0m[[0m[31merror[0m] [0m[0m  val IMM_S  = UInt(0, 3)[0m
+[0m[[0m[31merror[0m] [0m[0m               ^[0m
+[0m[[0m[31merror[0m] [0m[0m/flexpret/src/main/scala/Core/constants.scala:29:16: not found: value UInt[0m
+[0m[[0m[31merror[0m] [0m[0m  val IMM_B  = UInt(1, 3)[0m
+[0m[[0m[31merror[0m] [0m[0m               ^[0m
+[0m[[0m[31merror[0m] [0m[0m/flexpret/src/main/scala/Core/constants.scala:30:16: not found: value UInt[0m
+[0m[[0m[31merror[0m] [0m[0m  val IMM_U  = UInt(2, 3)[0m
+[0m[[0m[31merror[0m] [0m[0m               ^[0m
+[0m[[0m[31merror[0m] [0m[0m/flexpret/src/main/scala/Core/constants.scala:31:16: not found: value UInt[0m
+[0m[[0m[31merror[0m] [0m[0m  val IMM_J  = UInt(3, 3)[0m
+[0m[[0m[31merror[0m] [0m[0m               ^[0m
+[0m[[0m[31merror[0m] [0m[0m/flexpret/src/main/scala/Core/constants.scala:32:16: not found: value UInt[0m
+[0m[[0m[31merror[0m] [0m[0m  val IMM_I  = UInt(4, 3)[0m
+[0m[[0m[31merror[0m] [0m[0m               ^[0m
+[0m[[0m[31merror[0m] [0m[0m/flexpret/src/main/scala/Core/constants.scala:33:16: not found: value UInt[0m
+[0m[[0m[31merror[0m] [0m[0m  val IMM_Z  = UInt(5, 3)[0m
+[0m[[0m[31merror[0m] [0m[0m               ^[0m
+[0m[[0m[31merror[0m] [0m[0m/flexpret/src/main/scala/Core/constants.scala:34:16: not found: value BitPat[0m
+[0m[[0m[31merror[0m] [0m[0m  val IMM_X  = BitPat("b???")[0m
+[0m[[0m[31merror[0m] [0m[0m               ^[0m
+[0m[[0m[31merror[0m] [0m[0m/flexpret/src/main/scala/Core/constants.scala:38:17: not found: value UInt[0m
+[0m[[0m[31merror[0m] [0m[0m  val OP1_PC  = UInt(0, 2)[0m
+[0m[[0m[31merror[0m] [0m[0m                ^[0m
+[0m[[0m[31merror[0m] [0m[0m/flexpret/src/main/scala/Core/constants.scala:39:17: not found: value UInt[0m
+[0m[[0m[31merror[0m] [0m[0m  val OP1_RS1 = UInt(1, 2)[0m
+[0m[[0m[31merror[0m] [0m[0m                ^[0m
+[0m[[0m[31merror[0m] [0m[0m/flexpret/src/main/scala/Core/constants.scala:40:17: not found: value UInt[0m
+[0m[[0m[31merror[0m] [0m[0m  val OP1_0   = UInt(2, 2)[0m
+[0m[[0m[31merror[0m] [0m[0m                ^[0m
+[0m[[0m[31merror[0m] [0m[0m/flexpret/src/main/scala/Core/constants.scala:41:17: not found: value BitPat[0m
+[0m[[0m[31merror[0m] [0m[0m  val OP1_X   = BitPat("b??")[0m
+[0m[[0m[31merror[0m] [0m[0m                ^[0m
+[0m[[0m[31merror[0m] [0m[0m/flexpret/src/main/scala/Core/constants.scala:45:17: not found: value UInt[0m
+[0m[[0m[31merror[0m] [0m[0m  val OP2_IMM = UInt(0, 2)[0m
+[0m[[0m[31merror[0m] [0m[0m                ^[0m
+[0m[[0m[31merror[0m] [0m[0m/flexpret/src/main/scala/Core/constants.scala:46:17: not found: value UInt[0m
+[0m[[0m[31merror[0m] [0m[0m  val OP2_RS2 = UInt(1, 2)[0m
+[0m[[0m[31merror[0m] [0m[0m                ^[0m
+[0m[[0m[31merror[0m] [0m[0m/flexpret/src/main/scala/Core/constants.scala:47:17: not found: value UInt[0m
+[0m[[0m[31merror[0m] [0m[0m  val OP2_0   = UInt(2, 2)[0m
+[0m[[0m[31merror[0m] [0m[0m                ^[0m
+[0m[[0m[31merror[0m] [0m[0m/flexpret/src/main/scala/Core/constants.scala:48:17: not found: value UInt[0m
+[0m[[0m[31merror[0m] [0m[0m  val OP2_4   = UInt(3, 2) // only needed for WU[0m
+[0m[[0m[31merror[0m] [0m[0m                ^[0m
+[0m[[0m[31merror[0m] [0m[0m/flexpret/src/main/scala/Core/constants.scala:49:17: not found: value BitPat[0m
+[0m[[0m[31merror[0m] [0m[0m  val OP2_X   = BitPat("b??")[0m
+[0m[[0m[31merror[0m] [0m[0m                ^[0m
+[0m[[0m[31merror[0m] [0m[0m/flexpret/src/main/scala/Core/constants.scala:53:18: not found: value UInt[0m
+[0m[[0m[31merror[0m] [0m[0m  val ALU_ADD  = UInt( 0, 4)[0m
+[0m[[0m[31merror[0m] [0m[0m                 ^[0m
+[0m[[0m[31merror[0m] [0m[0m/flexpret/src/main/scala/Core/constants.scala:54:18: not found: value UInt[0m
+[0m[[0m[31merror[0m] [0m[0m  val ALU_SLL  = UInt( 1, 4)[0m
+[0m[[0m[31merror[0m] [0m[0m                 ^[0m
+[0m[[0m[31merror[0m] [0m[0m/flexpret/src/main/scala/Core/constants.scala:55:18: not found: value UInt[0m
+[0m[[0m[31merror[0m] [0m[0m  val ALU_XOR  = UInt( 4, 4)[0m
+[0m[[0m[31merror[0m] [0m[0m                 ^[0m
+[0m[[0m[31merror[0m] [0m[0m/flexpret/src/main/scala/Core/constants.scala:56:18: not found: value UInt[0m
+[0m[[0m[31merror[0m] [0m[0m  val ALU_SRL  = UInt( 5, 4)[0m
+[0m[[0m[31merror[0m] [0m[0m                 ^[0m
+[0m[[0m[31merror[0m] [0m[0m/flexpret/src/main/scala/Core/constants.scala:57:18: not found: value UInt[0m
+[0m[[0m[31merror[0m] [0m[0m  val ALU_OR   = UInt( 6, 4)[0m
+[0m[[0m[31merror[0m] [0m[0m                 ^[0m
+[0m[[0m[31merror[0m] [0m[0m/flexpret/src/main/scala/Core/constants.scala:58:18: not found: value UInt[0m
+[0m[[0m[31merror[0m] [0m[0m  val ALU_AND  = UInt( 7, 4)[0m
+[0m[[0m[31merror[0m] [0m[0m                 ^[0m
+[0m[[0m[31merror[0m] [0m[0m/flexpret/src/main/scala/Core/constants.scala:59:18: not found: value UInt[0m
+[0m[[0m[31merror[0m] [0m[0m  val ALU_SUB  = UInt( 8, 4)[0m
+[0m[[0m[31merror[0m] [0m[0m                 ^[0m
+[0m[[0m[31merror[0m] [0m[0m/flexpret/src/main/scala/Core/constants.scala:60:18: not found: value UInt[0m
+[0m[[0m[31merror[0m] [0m[0m  val ALU_SLT  = UInt(10, 4)[0m
+[0m[[0m[31merror[0m] [0m[0m                 ^[0m
+[0m[[0m[31merror[0m] [0m[0m/flexpret/src/main/scala/Core/constants.scala:61:18: not found: value UInt[0m
+[0m[[0m[31merror[0m] [0m[0m  val ALU_SLTU = UInt(11, 4)[0m
+[0m[[0m[31merror[0m] [0m[0m                 ^[0m
+[0m[[0m[31merror[0m] [0m[0m/flexpret/src/main/scala/Core/constants.scala:62:18: not found: value UInt[0m
+[0m[[0m[31merror[0m] [0m[0m  val ALU_SRA  = UInt(13, 4)[0m
+[0m[[0m[31merror[0m] [0m[0m                 ^[0m
+[0m[[0m[31merror[0m] [0m[0m/flexpret/src/main/scala/Core/constants.scala:63:18: not found: value BitPat[0m
+[0m[[0m[31merror[0m] [0m[0m  val ALU_X    = BitPat("b????")[0m
+[0m[[0m[31merror[0m] [0m[0m                 ^[0m
+[0m[[0m[31merror[0m] [0m[0m/flexpret/src/main/scala/Core/constants.scala:67:16: not found: value UInt[0m
+[0m[[0m[31merror[0m] [0m[0m  val BR_EQ  = UInt(0, 3)[0m
+[0m[[0m[31merror[0m] [0m[0m               ^[0m
+[0m[[0m[31merror[0m] [0m[0m/flexpret/src/main/scala/Core/constants.scala:68:16: not found: value UInt[0m
+[0m[[0m[31merror[0m] [0m[0m  val BR_NE  = UInt(1, 3)[0m
+[0m[[0m[31merror[0m] [0m[0m               ^[0m
+[0m[[0m[31merror[0m] [0m[0m/flexpret/src/main/scala/Core/constants.scala:69:16: not found: value UInt[0m
+[0m[[0m[31merror[0m] [0m[0m  val BR_LT  = UInt(2, 3)[0m
+[0m[[0m[31merror[0m] [0m[0m               ^[0m
+[0m[[0m[31merror[0m] [0m[0m/flexpret/src/main/scala/Core/constants.scala:70:16: not found: value UInt[0m
+[0m[[0m[31merror[0m] [0m[0m  val BR_GE  = UInt(3, 3)[0m
+[0m[[0m[31merror[0m] [0m[0m               ^[0m
+[0m[[0m[31merror[0m] [0m[0m/flexpret/src/main/scala/Core/constants.scala:71:16: not found: value UInt[0m
+[0m[[0m[31merror[0m] [0m[0m  val BR_LTU = UInt(4, 3)[0m
+[0m[[0m[31merror[0m] [0m[0m               ^[0m
+[0m[[0m[31merror[0m] [0m[0m/flexpret/src/main/scala/Core/constants.scala:72:16: not found: value UInt[0m
+[0m[[0m[31merror[0m] [0m[0m  val BR_GEU = UInt(5, 3)[0m
+[0m[[0m[31merror[0m] [0m[0m               ^[0m
+[0m[[0m[31merror[0m] [0m[0m/flexpret/src/main/scala/Core/constants.scala:73:16: not found: value BitPat[0m
+[0m[[0m[31merror[0m] [0m[0m  val BR_X   = BitPat("b???")[0m
+[0m[[0m[31merror[0m] [0m[0m               ^[0m
+[0m[[0m[31merror[0m] [0m[0m/flexpret/src/main/scala/Core/constants.scala:77:15: not found: value UInt[0m
+[0m[[0m[31merror[0m] [0m[0m  val CSR_W = UInt(1, 2)[0m
+[0m[[0m[31merror[0m] [0m[0m              ^[0m
+[0m[[0m[31merror[0m] [0m[0m/flexpret/src/main/scala/Core/constants.scala:78:15: not found: value UInt[0m
+[0m[[0m[31merror[0m] [0m[0m  val CSR_S = UInt(2, 2)[0m
+[0m[[0m[31merror[0m] [0m[0m              ^[0m
+[0m[[0m[31merror[0m] [0m[0m/flexpret/src/main/scala/Core/constants.scala:79:15: not found: value UInt[0m
+[0m[[0m[31merror[0m] [0m[0m  val CSR_C = UInt(3, 2)[0m
+[0m[[0m[31merror[0m] [0m[0m              ^[0m
+[0m[[0m[31merror[0m] [0m[0m/flexpret/src/main/scala/Core/constants.scala:80:15: not found: value BitPat[0m
+[0m[[0m[31merror[0m] [0m[0m  val CSR_X = BitPat("b??")[0m
+[0m[[0m[31merror[0m] [0m[0m              ^[0m
+[0m[[0m[31merror[0m] [0m[0m/flexpret/src/main/scala/Core/constants.scala:84:20: not found: value UInt[0m
+[0m[[0m[31merror[0m] [0m[0m  val EXE_RD_ALU = UInt(0, 2)[0m
+[0m[[0m[31merror[0m] [0m[0m                   ^[0m
+[0m[[0m[31merror[0m] [0m[0m/flexpret/src/main/scala/Core/constants.scala:85:20: not found: value UInt[0m
+[0m[[0m[31merror[0m] [0m[0m  val EXE_RD_CSR = UInt(1, 2)[0m
+[0m[[0m[31merror[0m] [0m[0m                   ^[0m
+[0m[[0m[31merror[0m] [0m[0m/flexpret/src/main/scala/Core/constants.scala:86:20: not found: value UInt[0m
+[0m[[0m[31merror[0m] [0m[0m  val EXE_RD_PC4 = UInt(2, 2)[0m
+[0m[[0m[31merror[0m] [0m[0m                   ^[0m
+[0m[[0m[31merror[0m] [0m[0m/flexpret/src/main/scala/Core/constants.scala:87:20: not found: value BitPat[0m
+[0m[[0m[31merror[0m] [0m[0m  val EXE_RD_X   = BitPat("b??")[0m
+[0m[[0m[31merror[0m] [0m[0m                   ^[0m
+[0m[[0m[31merror[0m] [0m[0m/flexpret/src/main/scala/Core/constants.scala:91:17: not found: value UInt[0m
+[0m[[0m[31merror[0m] [0m[0m  val MEM_LB  = UInt(0,  4)[0m
+[0m[[0m[31merror[0m] [0m[0m                ^[0m
+[0m[[0m[31merror[0m] [0m[0m/flexpret/src/main/scala/Core/constants.scala:92:17: not found: value UInt[0m
+[0m[[0m[31merror[0m] [0m[0m  val MEM_LH  = UInt(1,  4)[0m
+[0m[[0m[31merror[0m] [0m[0m                ^[0m
+[0m[[0m[31merror[0m] [0m[0m/flexpret/src/main/scala/Core/constants.scala:93:17: not found: value UInt[0m
+[0m[[0m[31merror[0m] [0m[0m  val MEM_LW  = UInt(2,  4)[0m
+[0m[[0m[31merror[0m] [0m[0m                ^[0m
+[0m[[0m[31merror[0m] [0m[0m/flexpret/src/main/scala/Core/constants.scala:94:17: not found: value UInt[0m
+[0m[[0m[31merror[0m] [0m[0m  val MEM_LBU = UInt(4,  4)[0m
+[0m[[0m[31merror[0m] [0m[0m                ^[0m
+[0m[[0m[31merror[0m] [0m[0m/flexpret/src/main/scala/Core/constants.scala:95:17: not found: value UInt[0m
+[0m[[0m[31merror[0m] [0m[0m  val MEM_LHU = UInt(5,  4)[0m
+[0m[[0m[31merror[0m] [0m[0m                ^[0m
+[0m[[0m[31merror[0m] [0m[0m/flexpret/src/main/scala/Core/constants.scala:96:17: not found: value UInt[0m
+[0m[[0m[31merror[0m] [0m[0m  val MEM_SB  = UInt(8,  4)[0m
+[0m[[0m[31merror[0m] [0m[0m                ^[0m
+[0m[[0m[31merror[0m] [0m[0m/flexpret/src/main/scala/Core/constants.scala:97:17: not found: value UInt[0m
+[0m[[0m[31merror[0m] [0m[0m  val MEM_SH  = UInt(9,  4)[0m
+[0m[[0m[31merror[0m] [0m[0m                ^[0m
+[0m[[0m[31merror[0m] [0m[0m/flexpret/src/main/scala/Core/constants.scala:98:17: not found: value UInt[0m
+[0m[[0m[31merror[0m] [0m[0m  val MEM_SW  = UInt(10, 4)[0m
+[0m[[0m[31merror[0m] [0m[0m                ^[0m
+[0m[[0m[31merror[0m] [0m[0m/flexpret/src/main/scala/Core/constants.scala:99:17: not found: value BitPat[0m
+[0m[[0m[31merror[0m] [0m[0m  val MEM_X   = BitPat("b????")[0m
+[0m[[0m[31merror[0m] [0m[0m                ^[0m
+[0m[[0m[31merror[0m] [0m[0m/flexpret/src/main/scala/Core/constants.scala:102:17: not found: value UInt[0m
+[0m[[0m[31merror[0m] [0m[0m  val MUL_L   = UInt(0, 2)[0m
+[0m[[0m[31merror[0m] [0m[0m                ^[0m
+[0m[[0m[31merror[0m] [0m[0m/flexpret/src/main/scala/Core/constants.scala:103:17: not found: value UInt[0m
+[0m[[0m[31merror[0m] [0m[0m  val MUL_H   = UInt(1, 2)[0m
+[0m[[0m[31merror[0m] [0m[0m                ^[0m
+[0m[[0m[31merror[0m] [0m[0m/flexpret/src/main/scala/Core/constants.scala:104:17: not found: value UInt[0m
+[0m[[0m[31merror[0m] [0m[0m  val MUL_HSU = UInt(2, 2)[0m
+[0m[[0m[31merror[0m] [0m[0m                ^[0m
+[0m[[0m[31merror[0m] [0m[0m1257 errors found[0m

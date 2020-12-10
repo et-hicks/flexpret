@@ -1,0 +1,95 @@
+[0m[[0m[33mwarn[0m] [0m[0m/flexpret/src/main/scala/Core/decode.scala:72:33: postfix operator zipWithIndex should be enabled[0m
+[0m[[0m[33mwarn[0m] [0m[0mby making the implicit value scala.language.postfixOps visible.[0m
+[0m[[0m[33mwarn[0m] [0m[0mThis can be achieved by adding the import clause 'import scala.language.postfixOps'[0m
+[0m[[0m[33mwarn[0m] [0m[0mor by setting the compiler option -language:postfixOps.[0m
+[0m[[0m[33mwarn[0m] [0m[0mSee the Scaladoc for value scala.language.postfixOps for a discussion[0m
+[0m[[0m[33mwarn[0m] [0m[0mwhy the feature should be explicitly enabled.[0m
+[0m[[0m[33mwarn[0m] [0m[0m      for ((value, i) <- values zipWithIndex)[0m
+[0m[[0m[33mwarn[0m] [0m[0m                                ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/flexpret/src/main/scala/Core/util.scala:14:18: implicit conversion method uintToBitPat should be enabled[0m
+[0m[[0m[33mwarn[0m] [0m[0mby making the implicit value scala.language.implicitConversions visible.[0m
+[0m[[0m[33mwarn[0m] [0m[0mThis can be achieved by adding the import clause 'import scala.language.implicitConversions'[0m
+[0m[[0m[33mwarn[0m] [0m[0mor by setting the compiler option -language:implicitConversions.[0m
+[0m[[0m[33mwarn[0m] [0m[0mSee the Scaladoc for value scala.language.implicitConversions for a discussion[0m
+[0m[[0m[33mwarn[0m] [0m[0mwhy the feature should be explicitly enabled.[0m
+[0m[[0m[33mwarn[0m] [0m[0m    implicit def uintToBitPat(x: UInt): BitPat = BitPat(x)[0m
+[0m[[0m[33mwarn[0m] [0m[0m                 ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/flexpret/src/main/scala/Core/control.scala:252:3: object debug in package Chisel is deprecated: debug doesn't do anything in Chisel3 as no pruning happens in the frontend[0m
+[0m[[0m[33mwarn[0m] [0m[0m  debug(exe_valid)[0m
+[0m[[0m[33mwarn[0m] [0m[0m  ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/flexpret/src/main/scala/Core/control.scala:277:68: method do_toBool in class Bits is deprecated: Use asBool instead[0m
+[0m[[0m[33mwarn[0m] [0m[0m  val dec_rd_write = (io.dec_inst(11, 7) =/= UInt(0)) && dec_rd_en.toBool[0m
+[0m[[0m[33mwarn[0m] [0m[0m                                                                   ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/flexpret/src/main/scala/Core/control.scala:295:46: method do_toBool in class Bits is deprecated: Use asBool instead[0m
+[0m[[0m[33mwarn[0m] [0m[0m  val exe_reg_csr_write = Reg(next = dec_csr.toBool)[0m
+[0m[[0m[33mwarn[0m] [0m[0m                                             ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/flexpret/src/main/scala/Core/control.scala:299:44: method do_toBool in class Bits is deprecated: Use asBool instead[0m
+[0m[[0m[33mwarn[0m] [0m[0m  val exe_reg_scall = Reg(next = dec_scall.toBool)[0m
+[0m[[0m[33mwarn[0m] [0m[0m                                           ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/flexpret/src/main/scala/Core/control.scala:300:42: method do_toBool in class Bits is deprecated: Use asBool instead[0m
+[0m[[0m[33mwarn[0m] [0m[0m  val exe_reg_sret = Reg(next = dec_sret.toBool)[0m
+[0m[[0m[33mwarn[0m] [0m[0m                                         ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/flexpret/src/main/scala/Core/control.scala:306:42: method do_toBool in class Bits is deprecated: Use asBool instead[0m
+[0m[[0m[33mwarn[0m] [0m[0m  val exe_reg_load = Reg(next = dec_load.toBool)[0m
+[0m[[0m[33mwarn[0m] [0m[0m                                         ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/flexpret/src/main/scala/Core/control.scala:308:44: method do_toBool in class Bits is deprecated: Use asBool instead[0m
+[0m[[0m[33mwarn[0m] [0m[0m  val exe_reg_store = Reg(next = dec_store.toBool)[0m
+[0m[[0m[33mwarn[0m] [0m[0m                                           ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/flexpret/src/main/scala/Core/control.scala:312:46: method do_toBool in class Bits is deprecated: Use asBool instead[0m
+[0m[[0m[33mwarn[0m] [0m[0m  val exe_reg_branch = Reg(next = dec_branch.toBool)[0m
+[0m[[0m[33mwarn[0m] [0m[0m                                             ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/flexpret/src/main/scala/Core/control.scala:313:42: method do_toBool in class Bits is deprecated: Use asBool instead[0m
+[0m[[0m[33mwarn[0m] [0m[0m  val exe_reg_jump = Reg(next = dec_jump.toBool)[0m
+[0m[[0m[33mwarn[0m] [0m[0m                                         ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/flexpret/src/main/scala/Core/control.scala:322:40: method do_toBool in class Bits is deprecated: Use asBool instead[0m
+[0m[[0m[33mwarn[0m] [0m[0m    val exe_reg_du = Reg(next = dec_du.toBool)[0m
+[0m[[0m[33mwarn[0m] [0m[0m                                       ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/flexpret/src/main/scala/Core/control.scala:343:38: method do_toBool in class Bits is deprecated: Use asBool instead[0m
+[0m[[0m[33mwarn[0m] [0m[0m  val exe_reg_ie = Reg(next = dec_ie.toBool && io.dec_inst(25).toBool)[0m
+[0m[[0m[33mwarn[0m] [0m[0m                                     ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/flexpret/src/main/scala/Core/control.scala:343:64: method do_toBool in class Bits is deprecated: Use asBool instead[0m
+[0m[[0m[33mwarn[0m] [0m[0m  val exe_reg_ie = Reg(next = dec_ie.toBool && io.dec_inst(25).toBool)[0m
+[0m[[0m[33mwarn[0m] [0m[0m                                                               ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/flexpret/src/main/scala/Core/control.scala:345:38: method do_toBool in class Bits is deprecated: Use asBool instead[0m
+[0m[[0m[33mwarn[0m] [0m[0m  val exe_reg_ee = Reg(next = dec_ie.toBool && !io.dec_inst(25).toBool)[0m
+[0m[[0m[33mwarn[0m] [0m[0m                                     ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/flexpret/src/main/scala/Core/control.scala:345:65: method do_toBool in class Bits is deprecated: Use asBool instead[0m
+[0m[[0m[33mwarn[0m] [0m[0m  val exe_reg_ee = Reg(next = dec_ie.toBool && !io.dec_inst(25).toBool)[0m
+[0m[[0m[33mwarn[0m] [0m[0m                                                                ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/flexpret/src/main/scala/Core/control.scala:417:34: method do_toBool in class Bits is deprecated: Use asBool instead[0m
+[0m[[0m[33mwarn[0m] [0m[0m  when(dec_reg_valid && dec_load.toBool) {[0m
+[0m[[0m[33mwarn[0m] [0m[0m                                 ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/flexpret/src/main/scala/Core/control.scala:433:37: method do_toBool in class Bits is deprecated: Use asBool instead[0m
+[0m[[0m[33mwarn[0m] [0m[0m  when(dec_reg_valid && dec_fence_i.toBool) {[0m
+[0m[[0m[33mwarn[0m] [0m[0m                                    ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/flexpret/src/main/scala/Core/control.scala:468:19: method do_toBool in class Bits is deprecated: Use asBool instead[0m
+[0m[[0m[33mwarn[0m] [0m[0m      (!dec_legal.toBool, Causes.illegal_instruction),[0m
+[0m[[0m[33mwarn[0m] [0m[0m                  ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/flexpret/src/main/scala/Core/control.scala:469:18: method do_toBool in class Bits is deprecated: Use asBool instead[0m
+[0m[[0m[33mwarn[0m] [0m[0m      (dec_scall.toBool, Causes.syscall)[0m
+[0m[[0m[33mwarn[0m] [0m[0m                 ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/flexpret/src/main/scala/Core/csr.scala:195:44: method do_toBool in class Bits is deprecated: Use asBool instead[0m
+[0m[[0m[33mwarn[0m] [0m[0m        reg_ie(io.rw.thread) := data_in(4).toBool[0m
+[0m[[0m[33mwarn[0m] [0m[0m                                           ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/flexpret/src/main/scala/Core/csr.scala:198:47: method do_toBool in class Bits is deprecated: Use asBool instead[0m
+[0m[[0m[33mwarn[0m] [0m[0m        reg_mtie(io.rw.thread) := data_in(26).toBool[0m
+[0m[[0m[33mwarn[0m] [0m[0m                                              ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/flexpret/src/main/scala/Core/csr.scala:201:46: method do_toBool in class Bits is deprecated: Use asBool instead[0m
+[0m[[0m[33mwarn[0m] [0m[0m        reg_msip(io.rw.thread) := data_in(3).toBool[0m
+[0m[[0m[33mwarn[0m] [0m[0m                                             ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/flexpret/src/main/scala/Core/datapath.scala:173:69: method != in class UInt is deprecated: Use '=/=', which avoids potential precedence problems[0m
+[0m[[0m[33mwarn[0m] [0m[0m    io.control.if_exc_fault := if_reg_pc(31, conf.iMemAddrBits + 2) != Cat(ADDR_ISPM_VAL, 0.U((30 - ADDR_ISPM_BITS - conf.iMemAddrBits).W))[0m
+[0m[[0m[33mwarn[0m] [0m[0m                                                                    ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/flexpret/src/main/scala/Core/decode.scala:78:116: method do_toBool in class Bits is deprecated: Use asBool instead[0m
+[0m[[0m[33mwarn[0m] [0m[0m    apply(addr, BitPat.dontCare(1), trues.map(BitPat(_) -> BitPat("b1")) ++ falses.map(BitPat(_) -> BitPat("b0"))).toBool[0m
+[0m[[0m[33mwarn[0m] [0m[0m                                                                                                                   ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/flexpret/src/main/scala/Core/loadstore.scala:156:48: method do_toBools in class Bits is deprecated: Use asBools instead[0m
+[0m[[0m[33mwarn[0m] [0m[0m                        Fill(4, write.asUInt)).toBools[0m
+[0m[[0m[33mwarn[0m] [0m[0m                                               ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/flexpret/src/main/scala/Core/main.scala:19:20: method execute in object Driver is deprecated: Use chisel3.stage.ChiselStage.execute. This will be removed in 3.4.[0m
+[0m[[0m[33mwarn[0m] [0m[0m    chisel3.Driver.execute(chiselArgs, () => new Core(coreConfig))[0m
+[0m[[0m[33mwarn[0m] [0m[0m                   ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/flexpret/src/main/scala/Core/main.scala:19:13: object Driver in package chisel3 is deprecated: Please switch to chisel3.stage.ChiselStage. Driver will be removed in 3.4.[0m
+[0m[[0m[33mwarn[0m] [0m[0m    chisel3.Driver.execute(chiselArgs, () => new Core(coreConfig))[0m
+[0m[[0m[33mwarn[0m] [0m[0m            ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m28 warnings found[0m
