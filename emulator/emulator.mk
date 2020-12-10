@@ -29,7 +29,7 @@ endif
 # Generate C++ emulator from Chisel code.
 $(EMULATOR_SRC_DIR)/$(MODULE).cpp: $(SRC_DIR)/$(MODULE)/*.scala
 	cd $(SBT_DIR) && \
-	$(SBT) "project Core" "run $(CORE_CONFIG) --backend c --targetDir $(SBT_TO_BASE)/$(EMULATOR_SRC_DIR) $(SBT_ARGS)"
+	$(SBT)  "run $(CORE_CONFIG) --backend c --targetDir $(SBT_TO_BASE)/$(EMULATOR_SRC_DIR) $(SBT_ARGS)"
 
 # Create build directory if needed.
 $(EMULATOR_BUILD_DIR):

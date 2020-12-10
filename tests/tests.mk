@@ -9,7 +9,7 @@ VPATH = $(TESTS_DIR)/include:$(PROG_SRC_DIR)
 #RISCV_GCC = riscv-gcc -m32
 #RISCV_OBJDUMP = riscv-objdump --disassemble-all --section=.text --section=.data --section=.bss
 #RISCV_OBJCOPY = riscv-objcopy
-RISCV_GCC = riscv64-unknown-elf-gcc -m32
+RISCV_GCC = riscv64-unknown-elf-gcc 
 RISCV_OBJDUMP = riscv64-unknown-elf-objdump --disassemble-all --section=.text --section=.data --section=.bss
 RISCV_OBJCOPY = riscv64-unknown-elf-objcopy
 RISCV_SPLIT_DATA = $(RISCV_OBJCOPY) --only-section .data --only-section .bss -O binary

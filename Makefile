@@ -14,7 +14,12 @@
 #
 # Michael Zimmer (mzimmer@eecs.berkeley.edu)
 
+# ------
+# My Own
+# -----
 
+SBT = sbt
+SBT_DIR = ../flexpret
 
 # -----------------------------------------------------------------------------
 # Standard directory/file locations and naming.
@@ -60,7 +65,9 @@ include config.mk
 CORE_CONFIG := $(THREADS)t$(if $(findstring true, $(FLEXPRET)),f)-$(ISPM_KBYTES)i-$(DSPM_KBYTES)d$(if $(findstring true, $(MUL)),-mul)-$(SUFFIX)
 
 # Default will build target and selected programs.
-all: $(TARGET)
+all:
+	@echo $(CORE_CONFIG)
+	 $(TARGET)
 
 # -----------------------------------------------------------------------------
 # C++ emulator generation and compilation.
@@ -139,6 +146,7 @@ $(PROG:%=$(PROG_RESULTS_DIR)/%.out): $(PROG_RESULTS_DIR)/%.out: $(PROG_BUILD_DIR
 
 # Possible targets are emulator and fpga.
 run: $(PROG:%=$(PROG_RESULTS_DIR)/%.out)
+	@echo core config is $(CORE_CONFIG)
 	@echo; perl -ne 'print "  [$$1] $$ARGV \t$$2\n" if /\*{3}(.*)\*{3}(.*)/' \
 	$^; echo;
 
