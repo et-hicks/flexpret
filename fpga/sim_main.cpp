@@ -58,15 +58,16 @@ int main(int argc, char** argv) {
     unsigned int line = 0;
     Verilated::commandArgs(argc, argv); // Remember args
     top = new VCore; // Create instance
-    top->reset = 1; // Set some inputs
+    top->reset = 0; // Set some inputs
     top->clock = 0;
     top->io_imem_enable = 1;
     top->io_dmem_enable = 1; 
     while (!Verilated::gotFinish()) {
-	top->reset = (main_time < 50);
+	top->reset = (main_time > 50);
 	top->clock = (main_time % 10 > 5);
-	if (!top->reset && main_time % 10 == 5) { // pos edge clock
+	if (top->reset && main_time % 10 == 5) { // pos edge clock
 		top->io_imem_data_in = ispm[line];
+		top->io_bus_data_in = ispm[line];
 		line++;
 		cout << "Adding an Instruction" << endl;
 	}	 
@@ -77,11 +78,15 @@ int main(int argc, char** argv) {
 	cout << " dmem addr " << top->io_dmem_addr << "\t|";
 	cout << " imem in " << top->io_imem_data_in << "\t|";
 	cout << " imem out " << top->io_imem_data_out << "\t|";
+	cout << " imem addr " << top->io_imem_addr << "\t|";	
 	cout << " host to host " << top->io_host_to_host << "\t|";
 	cout << " bus data in " << top->io_bus_data_in << "\t|";
 	cout << " bus data out " << top->io_bus_data_out << "\t|";
-	cout << " clock " << top->clock << "\t|";
-	cout << " reset " << top->reset << endl;
+	cout << " bus data addr " << top->io_bus_addr << "\t|";
+	// cout << " GPIO in " << top->io_gpio_in_1 << "\t|";
+	// cout << " GPIO out " << top->io_gpio_out_1 << "\t|";
+	// cout << " clock " << top->clock << "\t|";
+	// cout << " reset " << top->reset << endl;
 	main_time++; // Time passes...
     }
     top->final(); // Done simulating
