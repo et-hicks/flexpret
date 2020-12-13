@@ -49,6 +49,7 @@ class ISpm(implicit conf: FlexpretConfiguration) extends Module
   // Read port connected to core for instruction fetch.
   when(io.core.r.enable) {
     dout_r := ispm(io.core.r.addr)
+  //  printf ("%d\t 0x%x\t 0x%x\n", io.core.r.enable, io.core.r.addr, io.core.r.data_out) 
   }
 
   if(conf.iMemCoreRW || conf.iMemBusRW) {

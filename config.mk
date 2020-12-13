@@ -14,7 +14,7 @@
 # 	ti: ex+timing instructions
 # 	all: ti+ all exception causes and stats
 
-THREADS ?= 4
+THREADS ?= 1
 FLEXPRET ?= true
 ISPM_KBYTES ?= 16
 DSPM_KBYTES ?= 16
